@@ -1,0 +1,32 @@
+### //CREACION DE USUARIO
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: Application/json
+
+{
+    "nombre": "Pablo Cabrera",
+    "dni": 41345954,
+    "correo": "agaewq98@gmail.com",
+    "telefono": 381552498,
+    "direccion": "Tucuman, Tafi Viejo"
+}
+
+### //MOSTRAR TODOS LOS USUARIOS
+GET http://localhost:3000/api/users HTTP/1.1
+
+### //MOSTRAR UN SOLO USUARIO UTILIZANDO EL ID
+GET http://localhost:3000/api/users/662fed6737ecf774b53d0d82 HTTP/1.1
+
+### //ACTUALIZAR DATOS DEL USUARIO UTILIZANDO EL ID
+PUT http://localhost:3000/api/users/662fed6737ecf774b53d0d82 HTTP/1.1
+Content-Type: Application/json
+
+{
+    "nombre": "Pablo Cabrera3",
+    "dni": 41345954,
+    "correo": "agaewq98@gmail.com",
+    "telefono": 381552498,
+    "direccion": "Tucuman, Tafi Viejo"
+}
+
+### //ELIMINAR UN USUARIO UTILIZANDO SU ID
+DELETE http://localhost:3000/api/users/662fed6737ecf774b53d0d82 HTTP/1.1
